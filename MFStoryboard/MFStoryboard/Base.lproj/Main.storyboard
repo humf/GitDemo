@@ -19,7 +19,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Q41-ps-1vh" id="Wra-GL-wLQ">
-                                    <rect key="frame" x="0.0" y="0.0" width="342" height="60"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="59.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SQq-KW-6rc">
@@ -82,7 +82,7 @@
         <!--Gestures-->
         <scene sceneID="0eg-vQ-2n0">
             <objects>
-                <viewController id="7F4-GZ-czg" sceneMemberID="viewController">
+                <viewController id="7F4-GZ-czg" customClass="GestureViewController" customModule="MFStoryboard" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EJc-xc-Mmr"/>
                         <viewControllerLayoutGuide type="bottom" id="yns-L2-KOc"/>
@@ -97,14 +97,43 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Th5-G0-Ugd">
+                                <rect key="frame" x="195" y="414" width="60" height="30"/>
+                                <state key="normal" title="点击传值"/>
+                                <connections>
+                                    <action selector="tapToNextVC:" destination="7F4-GZ-czg" eventType="touchUpInside" id="exa-P2-NZN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Gestures" id="fOG-lQ-OqL"/>
+                    <connections>
+                        <segue destination="yJN-fg-lVN" kind="push" id="sN8-bY-oLL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rT6-10-xWB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="515.5" y="266.5"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="c69-i0-DCI">
+            <objects>
+                <viewController storyboardIdentifier="pushToSecond" id="yJN-fg-lVN" customClass="SecondViewController" customModule="MFStoryboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nbm-yu-m3B"/>
+                        <viewControllerLayoutGuide type="bottom" id="dgZ-5T-H70"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LXA-gf-qmp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9yc-l7-edR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hQv-DY-74z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056" y="233"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="I4g-q4-Gkf">

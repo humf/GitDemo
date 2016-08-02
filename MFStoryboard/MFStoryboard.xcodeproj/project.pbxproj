@@ -15,6 +15,8 @@
 		0110AB131D4B462B00FDB83A /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0110AB121D4B462B00FDB83A /* Player.swift */; };
 		0110AB151D4B483900FDB83A /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0110AB141D4B483900FDB83A /* SampleData.swift */; };
 		0110AB191D4B524F00FDB83A /* PlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0110AB181D4B524F00FDB83A /* PlayerTableViewCell.swift */; };
+		013931551D5088D100739213 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013931541D5088D100739213 /* SecondViewController.swift */; };
+		013931571D5089B400739213 /* GestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013931561D5089B400739213 /* GestureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		0110AB121D4B462B00FDB83A /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		0110AB141D4B483900FDB83A /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		0110AB181D4B524F00FDB83A /* PlayerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerTableViewCell.swift; sourceTree = "<group>"; };
+		013931541D5088D100739213 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		013931561D5089B400739213 /* GestureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 				0110AB121D4B462B00FDB83A /* Player.swift */,
 				0110AB141D4B483900FDB83A /* SampleData.swift */,
 				0110AB181D4B524F00FDB83A /* PlayerTableViewCell.swift */,
+				013931541D5088D100739213 /* SecondViewController.swift */,
+				013931561D5089B400739213 /* GestureViewController.swift */,
 			);
 			path = MFStoryboard;
 			sourceTree = "<group>";
@@ -144,6 +150,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				013931571D5089B400739213 /* GestureViewController.swift in Sources */,
+				013931551D5088D100739213 /* SecondViewController.swift in Sources */,
 				0110AB111D4B44C800FDB83A /* PlayersTableViewController.swift in Sources */,
 				0110AB131D4B462B00FDB83A /* Player.swift in Sources */,
 				0110AB191D4B524F00FDB83A /* PlayerTableViewCell.swift in Sources */,
@@ -298,6 +306,7 @@
 				0110AB0D1D4B2DBD00FDB83A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

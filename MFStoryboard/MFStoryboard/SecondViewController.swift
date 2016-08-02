@@ -10,10 +10,13 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    var name : String?
+    var age : Int?
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        print(name!,age!)
+        
     }
 
     override func didReceiveMemoryWarning() {

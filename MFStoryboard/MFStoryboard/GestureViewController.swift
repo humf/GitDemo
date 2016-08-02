@@ -7,9 +7,16 @@
 //
 
 import UIKit
-
 class GestureViewController: UIViewController {
 
+    @IBAction func tapToNextVC(sender: AnyObject) {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let secondVC = storyBoard.instantiateViewControllerWithIdentifier("pushToSecond") as! SecondViewController
+        secondVC.name = "abc"
+        secondVC.age = 12
+        self.navigationController?.pushViewController(secondVC, animated: true)
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
