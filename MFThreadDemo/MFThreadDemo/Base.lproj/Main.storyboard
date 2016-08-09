@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11129.15" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MFThreadDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XEN-fI-rbU"/>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3bG-Fv-mGO"/>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eTr-TD-lVu"/>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="69k-S2-m4i"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="auI-B7-H20">
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="button2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UIG-eQ-mFJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ea7-yi-p2w">
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="button3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sp0-AY-iHa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72y-7b-UcS">
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="button4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7LF-jj-LOe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1p-5h-vUp">
+                                <frame key="frameInset" minX="108" minY="273" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="开始下载"/>
+                                <connections>
+                                    <action selector="start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yxt-44-ywe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RnG-qy-qiH">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="6pE-ao-hdb"/>
+                                    <constraint firstAttribute="height" constant="30" id="q5T-11-raJ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="button1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jew-dk-FFm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="RnG-qy-qiH" secondAttribute="trailing" constant="22" id="0h4-8y-pXR"/>
+                            <constraint firstItem="auI-B7-H20" firstAttribute="centerY" secondItem="3bG-Fv-mGO" secondAttribute="centerY" id="1j4-93-rme"/>
+                            <constraint firstItem="XEN-fI-rbU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="21" id="Cgu-2f-b0N"/>
+                            <constraint firstItem="69k-S2-m4i" firstAttribute="trailing" secondItem="XEN-fI-rbU" secondAttribute="trailing" id="JTv-iT-jwb"/>
+                            <constraint firstItem="eTr-TD-lVu" firstAttribute="leading" secondItem="XEN-fI-rbU" secondAttribute="leading" id="Q9Z-f0-uHS"/>
+                            <constraint firstItem="3bG-Fv-mGO" firstAttribute="trailing" secondItem="XEN-fI-rbU" secondAttribute="trailing" id="VMF-E9-Wvx"/>
+                            <constraint firstItem="69k-S2-m4i" firstAttribute="leading" secondItem="XEN-fI-rbU" secondAttribute="leading" id="W0J-Hg-VBw"/>
+                            <constraint firstItem="XEN-fI-rbU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="68" id="WON-qT-iSO"/>
+                            <constraint firstItem="3bG-Fv-mGO" firstAttribute="top" secondItem="XEN-fI-rbU" secondAttribute="bottom" constant="28" id="Yyh-r6-8Co"/>
+                            <constraint firstItem="auI-B7-H20" firstAttribute="leading" secondItem="RnG-qy-qiH" secondAttribute="leading" id="aoP-39-888"/>
+                            <constraint firstItem="eTr-TD-lVu" firstAttribute="top" secondItem="3bG-Fv-mGO" secondAttribute="bottom" constant="30" id="glj-6S-dOd"/>
+                            <constraint firstItem="72y-7b-UcS" firstAttribute="leading" secondItem="RnG-qy-qiH" secondAttribute="leading" id="mhH-2h-SQC"/>
+                            <constraint firstItem="ea7-yi-p2w" firstAttribute="centerY" secondItem="eTr-TD-lVu" secondAttribute="centerY" id="msx-Xl-WRz"/>
+                            <constraint firstItem="3bG-Fv-mGO" firstAttribute="leading" secondItem="XEN-fI-rbU" secondAttribute="leading" id="nlV-Ar-6VW"/>
+                            <constraint firstItem="ea7-yi-p2w" firstAttribute="leading" secondItem="RnG-qy-qiH" secondAttribute="leading" id="oKk-1N-Ddv"/>
+                            <constraint firstItem="eTr-TD-lVu" firstAttribute="trailing" secondItem="XEN-fI-rbU" secondAttribute="trailing" id="oae-NJ-vpR"/>
+                            <constraint firstItem="RnG-qy-qiH" firstAttribute="centerY" secondItem="XEN-fI-rbU" secondAttribute="centerY" id="rzg-Kf-xjF"/>
+                            <constraint firstItem="72y-7b-UcS" firstAttribute="centerY" secondItem="69k-S2-m4i" secondAttribute="centerY" id="wZq-vu-NVr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XEN-fI-rbU" secondAttribute="trailing" constant="102" id="xlv-LB-M48"/>
+                            <constraint firstItem="69k-S2-m4i" firstAttribute="top" secondItem="eTr-TD-lVu" secondAttribute="bottom" constant="28" id="zLe-Dw-vbj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="progress1" destination="XEN-fI-rbU" id="EKc-6S-AZH"/>
+                        <outlet property="progress2" destination="3bG-Fv-mGO" id="xtB-TA-ets"/>
+                        <outlet property="progress3" destination="eTr-TD-lVu" id="wfP-ho-WgE"/>
+                        <outlet property="progress4" destination="69k-S2-m4i" id="DpP-ye-0TZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98.400000000000006" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+</document>
